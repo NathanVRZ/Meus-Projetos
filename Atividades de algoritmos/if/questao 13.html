@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão - 13</title>
+</head>
+<body>
+    <center><H1>Status da temperatura</H1></center>
+    <input id="temperatura" placeholder="informe a temperatura">
+    <button onclick="analise()">Analisar temperatura</button>
+    <div id="msg">
+
+    </div>
+</body>
+</html>
+<script>
+    function analise() {
+        var valor_temperatura = Number(temeperatura.value)
+
+        msg.innerHTML = 'temperatua confortavel';
+
+        if (valor_temperatura < 22) {
+            msg.innerHTML = 'temperatura desconfortavel - esta frio'
+        }
+
+        if(valor_temperatura > 23) {
+            msg.innerHTML = 'Temperatura desconfortavel - esta quente'
+        }
+    }
+</script>

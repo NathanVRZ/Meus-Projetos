@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+<body>
+    <center><h1>Calcule sua nota</h1></center>
+
+    Informe suas notas <br>
+    <Input id="nota1" placeholder="Primeira nota">
+    <input id="nota2" placeholder="Segunda nota">
+    <input id="nota3" placeholder="Terceira nota">
+    <br>
+    <button onclick='calcular()'>Calcular notas</button>
+    <br>
+    <div id="msg">
+
+    </div>
+    <div id="msg2">
+
+    </div>
+</body>
+</html>
+<script>
+    function calcular() {
+        var somar = Number(nota1.value) + Number(nota2.value) + Number(nota3.value);
+        var calculo = somar.toFixed(2) / 3
+
+        msg.innerHTML = `sua media foi de ${calculo.toFixed(2)}`
+
+        if (calculo >= 9.4) {
+            msg2.innerHTML = 'Parabéns, voccê é fora de série!'
+        }
+    }
+</script>

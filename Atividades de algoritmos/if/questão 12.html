@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 12</title>
+</head>
+<body>
+    Informe um ano <br>
+    <input id="valor1">
+    <br>
+    <button onclick="calculo()">
+        calcular ano
+    </button>
+       <br>
+    <div id="msg">
+       
+    </div>
+</body>
+</html>
+<script>
+    var ano = Number(valor1.value);
+    var vazio = ''
+
+    if (ano < 1965) {
+        vazio = `no ano ${ano} o email ainda não havia sido criado`
+    }
+
+    if (ano == 1965) {
+        vazio = `No ano ${ano} o email ainda estava sendo criado`
+    }
+
+    if (ano > 1965) {
+        if(ano > 1970) {
+            vazio = `No ano ${ano} o email ja havia sido criado` 
+        }
+        if (ano > 1969) {
+            vazio = `No ano ${ano} o email foi aprimorado e podia ser enviado para outra pessoa`
+        }
+
+        msg.innerHTML = `${vazio}`; 
+    }
+</script>

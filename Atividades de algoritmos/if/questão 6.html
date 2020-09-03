@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    Quanto de luz gasta por mês?
+    <input id="qtd_kwh" autofocus>
+    <button onclick="calculo()"> valor que ira pagar </button>
+    <br>
+    <div id="msg">
+
+    </div>
+</body>
+</html>
+<script>
+    function calculo() {
+        var valorTotal = Number(qtd_kwh.value) * 0.85;
+        var valorDesc = (Number(qtd_kwh.value) * 0.85) * 10 / 100;
+        var total_pagar = valorTotal - valorDesc; 
+
+        if(qtd_kwh <= 100) {
+            msg.innerHTML = `Você ira pagar R$${total_pagar}`
+        }
+        if(qtd_kwh >= 100) {
+            msg.innerHTML = `Você ira pagar R$${valorTotal}`
+        }
+
+    }
+</script>

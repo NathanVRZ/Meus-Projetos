@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 1 if else</title>
+</head>
+<body>
+    <center><H1>Calcular quantas latinhas consome por ano</H1></center>
+
+    Quantas latinhas você toma por dia? <input id="latas"> <br>
+
+    <button onclick="calcular()">Quantos refris</button>
+    <br>
+    <div id="msg"></div>
+
+    </div>
+    <div id="refri">
+        
+    </div>
+</body>
+</html>
+<script>
+    function calcular() {
+        var valor_refri = Number(latas.value) * 365;
+        msg.innerHTML = valor_refri;
+        refri.innerHTML = '' 
+        if (valor_refri >= 500) {
+            msg.innerHTML = '<span style="color: white; background-color: red;">Cuidado com a diabetes!</span>'
+        }
+
+        refri.innerHTML = `voce consome por ano: ${valor_refri}`
+    }
+</script>
