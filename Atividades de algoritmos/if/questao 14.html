@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Pizza Rãti</h1>
+        <input type="text" placeholder="informe quantos km voce mora da pizzaria" id="distancia">
+        <button onclick="analisar()">verificar frete</button>
+
+        <div id="msg">
+
+        </div>
+
+    </center>
+</body>
+</html>
+<script>
+    function analisar(){
+        var km = Number(distancia.value);
+        
+        if(km >= 250){
+            msg.innerHTML = `A Pizza Rãti não entrega neste endereço!`
+        }
+
+        if(km < 250){
+            msg.innerHTML = `A sua pizza será entregue, porém o valor de entrega é de R$ 25,00`
+        }
+
+        if(km < 50){
+            msg.innerHTML =  `A sua pizza será entregue e não custará nada para você :)`
+        }
+    }
+</script>

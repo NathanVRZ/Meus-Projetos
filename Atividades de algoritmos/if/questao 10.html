@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Saiba quanto tempo voce gastou assistindo serie</h1>
+        <input type="text" placeholder="informe a serie" id="assiste">
+        <input type="text" placeholder="informe quantos EP ja assistiu" id="tempo">
+        <button onclick="analise()">Ver o tempo gasto</button>
+
+        <div id="msg">
+
+        </div>
+
+    </center>
+</body>
+</html>
+<script>
+    function analise(){
+        var assistiu = Number(tempo.value);
+        var serie = assiste.value;
+
+        var calculo = assistiu * 1320;
+
+        msg.innerHTML = `Parece que você gosta de ${serie}`;
+
+        if(calculo >= 108000){
+            msg.innerHTML = `Uau parece que voce realmente gosta desta serie`
+        }
+
+    }
+</script>
