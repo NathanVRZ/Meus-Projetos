@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Temperatura do ambiente <input id="temp"> <br>
+    <button onclick="calcular()">Verificar clima</button> <br>
+    <img src="" id="img">
+</body>
+</html>
+
+<script>
+
+    function calcular(){
+        var temperatura = Number(temp.value);
+
+        if(temperatura <= 10){
+            img.src='https://alimentacaoemfoco.org.br/wp-content/uploads/2018/02/sobras-alimentos-conservados.jpg';
+        }
+        else{
+            img.src='https://cdn-istoe-ssl.akamaized.net/wp-content/uploads/sites/14/2016/05/as_17469257723665994.jpg';
+        }
+    }
+
+</script>

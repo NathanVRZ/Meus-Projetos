@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 09</title>
+</head>
+<body>
+    Em quanto tempo o arroz foi cozido? <input id="time"> <br>
+    <button onclick="calcular()">Provar arroz</button> <br>
+    <div id="msg"></div> <br>
+    <img src="" id="img">
+</body>
+</html>
+
+<script>
+
+    function calcular(){
+        var tempo = Number(time.value);
+
+        if(tempo == 5){
+            div_mensagem.innerHTML= `Parabéns! Arroz perfeito!`
+            img.src='https://img.itdg.com.br/tdg/images/recipes/000/164/825/130691/130691_original.jpg?mode=crop&width=710&height=400';
+        }
+        else{
+            msg.innerHTML= `Arroz cru ou cozido demais!`
+            img.src='https://assets.almanaquesos.com/wp-content/uploads/2017/06/arroz-queimado-500x263.jpg'
+        }
+    }
+
+
+</script>

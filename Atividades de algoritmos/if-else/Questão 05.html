@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05</title>
+</head>
+<body>
+    Valor da pizza <input id="Vpizza"> <br>
+    Quantos amigos? <input id="QTDamigos"> <br>
+    Quanto cada amigo pode pagar? <input id="valor_amigos"> <br>
+    <button onclick="calculo()">Rola a pizza?</button> <br>
+    <div id="msg"></div> 
+</body>
+</html>
+<script>
+
+    function calculo(){
+        var pizza = Number(Vpizza.value);
+        var amigos = Number(QTDamigos.value);
+        var dividido = pizza / amigos;
+        var amigo = Number(valor_amigos.value);
+
+        div_mensagem.innerHTML= `Cada amigo vai pagar R$${dividido.toFixed(2)} pela pizza`;
+        if(dividido > amigo){
+            msg.innerHTML=`Deu ruim! Pizza muito cara!`
+        }
+        else{
+            msg.innerHTML= `Cada amigo vai pagar R$${dividido.toFixed(2)} pela pizza <br>`;
+            msg.innerHTML+=`UHU! Vamos pedir a pizza!`;
+        }
+    }
+
+</script>

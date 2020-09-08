@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+<body>
+    Quantas partidas atacante jogou? <input id="atacante_jogo"> <br>
+    Quantos gols foram marcados? <input id="atacante_gol"> <br>
+    <button onclick="calcular()">Estudar atacante</button> <br>
+
+    <div id="msg"></div> <br>
+    <img src="" id="img">
+</body>
+</html>
+<script>
+
+    function calcular(){
+        var jogos = Number(atacante_jogo.value);
+        var gol= Number(atacante_gol.value);
+
+        var media = gol / jogos;
+
+        if(media < 0.2){
+            msg.innerHTML= `Melhor mudar de posição`;
+            img.src= 'https://paraibaonline.com.br/wp-content/uploads/2020/03/hulk3103.jpg';
+        }
+        else{
+            msg.innerHTML=`Atacante mediano`;
+            img.src= 'https://s2.glbimg.com/ueyxUU6dOQDukZHwsjIa53W0yjQ=/0x0:1000x500/1000x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2018/08/24/fnx-dhw13-672x336.jpg';
+        }
+        if(media > 0.6){
+            msg.innerHTML=`Atacante de futuro`;
+            img.src= 'https://vs.media/resize?compression=8&quality=65&type=webp&url=http%3A%2F%2Fimg.vs.media%2F1572361922962-csgo-gaules-gamers-club-masters.jpg&width=728';
+        }
+    }
+
+</script>

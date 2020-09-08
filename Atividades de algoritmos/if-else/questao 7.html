@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 7</title>
+</head>
+<body>
+    <h3>Veja sua frequencia</h3>
+    <input id="freq" placeholder="informe sua frequencia">
+    <button onclick="Analisar()">
+        Analisar frequencia
+    </button >
+    <div id="msg">
+
+    </div>
+</body>
+</html>
+<script>
+    function Analisar() {
+        var freq1 = Number(freq.value)
+
+        if (freq1 >= 50) {
+            msg.innerHTML = `<img src="https://thumbs.dreamstime.com/z/estudante-reading-books-showing-estudioso-34211523.jpg">`;
+            
+        }else {
+            msg.innerHTML = `<img src="https://image.freepik.com/fotos-gratis/turista-apontando-para-cima_1368-7017.jpg">`
+            
+        }
+    }
+</script>
+

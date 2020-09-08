@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+<body>
+    <H3>Calcular chocolates comprados</H3>
+    <input id="quantidade" placeholder="Informe os chocolates">
+    <button onclick="comprar()">
+        comprar
+    </button>
+    <div id="msg">
+
+    </div>
+</body>
+</html>
+<script>
+    function comprar() {
+        var qtd = Number(quantidade.value)
+        var contas_0 = (qtd * 3);
+        var conta0_0 = (qtd * 2.5);
+        var valor_final = '';
+
+        msg.innerHTML = '';
+
+        if(qtd > 12) {
+            valor_final = conta0_0 
+            msg_innerHTML = `o valor da sua compra foi: R$${valor_final}`
+        } else {
+            valor_final = contas_0
+            msg.innerHTML = `o valor da sua compra foi: R$${valor_final}`
+        }
+    }
+</script>
