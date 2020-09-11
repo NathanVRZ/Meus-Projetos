@@ -1,0 +1,31 @@
+#sobre {
+    text-align: center;
+}
+
+.about-section{
+    background: url(/imgs/sobre.jpg) no-repeat left;
+    background-size: 40%;
+    overflow: hidden;
+    padding: 40px 0;
+    margin-left: 5%;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 120px;
+}
+
+#sobre h1::after {
+    display: block;
+    content: '';
+    width: 300px;
+    height: 2px;
+    margin: 10px auto;
+    background: rgba(0, 0, 0, 0.808);
+}
+
+.text {
+    font-size: 20px;
+}
