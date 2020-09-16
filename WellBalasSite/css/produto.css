@@ -10,7 +10,7 @@
     text-align: center;
     font-family: arial;
     margin-left: 2%;
-    margin-top: 2%;
+    margin-bottom: 2%;
   }
   
   .price {
@@ -37,9 +37,13 @@
 
   .card1 {
     display: inline-block;
-    max-width: 670px;
+    max-width: 540px;
     margin-left: 5%;
     text-align: center;
     font-family: arial;
 
+  }
+
+  p {
+    margin: 10px;
   }

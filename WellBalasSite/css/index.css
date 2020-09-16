@@ -17,7 +17,7 @@ nav {
     background: #330a006c; 
     height: 85px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
 }
 
