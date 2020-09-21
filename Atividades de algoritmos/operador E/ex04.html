@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    tempo em anos que trabalhou para o pai da pretendente
+    <input type="text" id="anos"><br> quantidade em kilos de trigo que suas plantações renderam
+    <input type="text" id="trigo"><br> quantidade em dias que ele falou ao trabalho por estar doente
+    <input id="dias" type="text"><br>
+
+    <button onclick="match()">deu match? </button>
+    <div id="texto"></div>
+    <img src="" alt="" id="img" width="25%">
+</body>
+
+</html>
+<script>
+    function match() {
+        if (anos.value >= "5" && trigo.value >= " 300" && dias.value <= "5") {
+            texto.innerHTML = "Minha filha será sua!"
+            img.src = "https://1.bp.blogspot.com/_lG0IseJd3ZM/TGH368syYjI/AAAAAAAAAmI/8ZbtzFxD3C8/s1600/noiva-feliz.jpg"
+
+        } else {
+            texto.innerHTML = `Deu ruim!  Trabalhe mais ${5 -anos.value} anos`
+            img.src = "https://pngimage.net/wp-content/uploads/2018/06/homem-bravo-png-1.png"
+        }
+    }
+</script>

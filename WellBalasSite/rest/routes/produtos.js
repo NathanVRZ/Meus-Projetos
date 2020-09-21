@@ -33,12 +33,16 @@ router.get('/:id_produto', (req, res, next) => {
     }  
 });
 
+
+// ALTERA UM PRODUTO
 router.patch('/', (req, res, next) => {
     res.status(201).send({
         mensagem: 'Usando PATCH dentro da rota produto'
     })
 });
 
+
+// DELETA UM PRODUTO
 router.delete('/', (req, res, next) => {
     res.status(201).send({
         mensagem: 'Usando DELETE dentro da rota produto'

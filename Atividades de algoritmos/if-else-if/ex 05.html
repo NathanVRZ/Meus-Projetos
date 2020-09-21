@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DIETA DO COVID</h1>
+    <input id="pao" placeholder="Quantos paos come por dia">
+    <input id="bolacha" placeholder="quantas bolachas?">
+    <input id="choco" placeholder="E quantos achocolatados anda tomando"> <br>
+    <button onclick="analisar()">
+        analisar calorias
+    </button>
+    <div id="msg">
+
+    </div>
+    <br>
+    <img src="" id="img">
+</body>
+</html>
+<script>
+    function analisar() {
+        var frances = Number(pao.value) * 50;
+        var salga = Number(bolacha.value) * 80;
+        var achoco = Number(choco.value) * 70;
+        var total = frances + salga + achoco;
+
+        if(total < 200) {
+            msg.innerHTML = "Parabéns, vai sair em forma da quarentena"
+            img.src= 'https://emagrecereperderpeso.com.br/wp-content/uploads/2016/02/perder-barriga-homem-mulher-540x360.jpg'
+        }else if (total <= 400) {
+            msg.innerHTML = "Cuidado, vai ficar mais fofinho(a) após quarentena!"
+            img.src= 'https://img.vixdata.io/pd/webp-large/pt/sites/default/files/e/efeito-sanfona-emagrecer-engordar-0417-1400x800.png'
+        }else 
+            msg.innerHTML = "Bom, acho que muitos não vão te reconhecer após a quarentena"
+            img.src = 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png'
+    }
+</script>

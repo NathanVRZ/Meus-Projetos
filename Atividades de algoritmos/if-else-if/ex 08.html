@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 04 - q04</title>
+</head>
+<body>
+
+    Você já clicou <b id="b_vezes">0</b> vezes
+
+    <button onclick="contar()">
+        Clica
+    </button>
+    <br>
+    <div id="msg">
+
+    </div>
+</body>
+</html>
+<script>
+
+function contar() {
+
+    var vezes = Number(b_vezes.innerHTML);
+    
+
+    vezes++;
+
+    b_vezes.innerHTML = vezes;
+
+    if (vezes < 5) {
+        msg.innerHTML = "dedo fraquinho hein"
+    }else if (vezes < 10) {
+        msg.innerHTML = "Dedo bom, mano"
+    }else if (vezes < 15) {
+        msg.innerHTML = "Gosta de clicar, hein!"
+    }else 
+    msg.innerHTML = "eitaaaa"
+
+
+}
+</script>

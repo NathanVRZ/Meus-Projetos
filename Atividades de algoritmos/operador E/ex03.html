@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    login <input type="text" id="login" placeholder="digite seu nome de usuario" required> <br> senha <input type="password" id="senha" placeholder="digite sua senha" required>
+    <button onclick="validar()">acessar</button>
+    <div id="texto"></div>
+
+</body>
+
+</html>
+<script>
+    function validar() {
+        if (login.value == "aidimim" && senha.value == "seinha") {
+            texto.innerHTML = `   <span style="color: blue;">Usuário autenticado com sucesso!</span>`
+        } else {
+            texto.innerHTML = `   <span style="color: red;">Login e/ou senha inválido(s)</span>`
+        }
+
+
+    }
+</script>

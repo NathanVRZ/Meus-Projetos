@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    o que voce come no seu cafe
+    <select name="" id="cafe">
+        <option value="2">ovos</option>
+        <option value="1">leite de arroz</option>
+        <option value="2">bacon</option>
+    </select> almoço
+    <select name="" id="almoco">
+        <option value="2">bife</option>
+        <option value="1"> hamburger de soja</option>
+        <option value="2"> frango grelhado</option>
+    </select> e na sua janta <select name="" id="janta">
+        <option value="1">picanha de soja</option>
+        <option value="2">cupim</option>
+        <option value="2">coração</option>
+    </select>
+    <button onclick="vegan()">verificar se voce é vegano</button>
+</body>
+
+</html>
+<script>
+    function vegan() {
+        if (cafe.value == "1" && almoco.value == "1" && janta.value == "1") {
+            alert("sim, voce é um vegano")
+        } else {
+            alert("não, você não é um vegano tmj")
+
+        }
+    }
+</script>

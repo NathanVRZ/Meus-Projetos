@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quest 07</title>
+</head>
+<body>
+    <select id="selecionar">
+        <option value="">Estações</option>
+        <option value="prima">Primavera</option>
+        <option value="verao">Verão</option>
+        <option value="out">outono</option>
+        <option value="inv">inverno</option>
+    </select>
+    <br>
+    <button onclick="ver()">
+        Ver estação
+    </button>
+    <br>
+    <div id="msg">
+
+    </div>
+    <br>
+    <img src="" id="img">
+</body>
+</html>
+<script>
+    function ver() {
+    var olhar = selecionar.value;
+
+    if (olhar == 'prima') {
+    msg.innerHTML = "março, abril e maio"
+    img.src= 'http://hoje.unisul.br/wp-content/uploads/2018/09/Primavera-bem-estar-saude.jpg'
+    }else if (olhar == 'verao') {
+        msg.innerHTML = "junho, julho e agosto"
+        img.src= 'https://www.estudopratico.com.br/wp-content/uploads/2018/12/inicio-verao.jpg'
+    }else if (olhar == 'out') {
+        msg.innerHTML = "setembro, outubro e novembro"
+        img.src= 'https://hypescience.com/wp-content/uploads/2019/03/equinocio-do-outono.jpg'
+    }else if (olhar == 'inv') {
+        msg.innerHTML = "dezembro, janeiro e fevereiro"
+        img.src= 'https://static.mundoeducacao.bol.uol.com.br/mundoeducacao/conteudo_legenda/3c3d180b39a9621e72f692bee226ce1c.jpg'
+    }
+    }
+</script>

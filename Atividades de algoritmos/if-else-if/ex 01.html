@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+<body>
+    <input id="nota" placeholder="informe sua nota">
+    <button onclick="analisar()">
+        analisar aluno
+    </button>
+    <br>
+    <div id="msg">
+
+    </div>
+</body>
+</html>
+<script> 
+    function analisar() {
+    var notas = Number(nota.value);
+        msg.innerHTML = ''
+    if (notas < 5) {
+        msg.innerHTML = `<span style="color: red;"> Aluno precisa de muita ajuda</span>`;
+        } else if (notas < 7) { 
+            msg.innerHTML = `<span style="color: orange;"> Aluno na média </span>`;
+        } else if (notas < 9.5) { 
+            msg.innerHTML = `<span style="color: green;"> Aluno na acima da média</span>`;
+        } else if (notas <= 10){ 
+            msg.innerHTML = `<span style="color: blue;"> Aluno fora da curva</span>`;
+        }else {
+            msg.innerHTML = `invalido nota: ${notas}`
+        }
+
+}
+</script>

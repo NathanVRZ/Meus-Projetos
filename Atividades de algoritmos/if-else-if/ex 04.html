@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 04</title>
+</head>
+<body>
+    <h1>TIME</h1>
+    selecione o time: <br>
+    <select id="selecionar">
+        <option value="">Escolha</option>
+        <option value="sao">São Paulo</option>
+        <option value="pal">Palmeiras</option>
+        <option value="cor">CURINTHIAS</option>
+        <option value="san">SANTOS</option>
+    </select> 
+    <button onclick="ver()">VER TIME</button>
+    <br>
+    <div id="msg">
+
+    </div>
+</body>
+</html>
+<script>
+    function ver() {
+        var resul = selecionar.value
+
+        if (resul == 'sao') {
+            msg.innerHTML = "salve o tricolor  paulista";
+        }else if (resul == 'pal') {
+            msg.innerHTML = "Salve o alviverde imponente";
+        }else if (resul == 'cor') {
+            msg.innerHTML = "Salve o Corinthians"
+        }else if (resul == "san") {
+            msg.innerHTML = "Agora que dá a bola é o Santos"
+        }
+    }
+</script>
