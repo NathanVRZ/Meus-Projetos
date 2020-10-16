@@ -4,10 +4,6 @@ const mysql = require('../config').pool;
 
 // RETORNA TODOS OS PRODUTOS
 router.get('/', (req, res, next) => {
-    // res.status(200).send({
-    //     mensagem: 'Todos os produtos sendo puxados'
-    // });
-
     mysql.getConnection((error, conn) => {
         if(error) { return res.status(500).send({error: erro})}
         conn.query(
@@ -34,7 +30,7 @@ router.post('/', (req, res, next) => {
                 if(error) { return res.status(500).send({error: erro})}
 
                 res.status(201).send({
-                    mensagem: 'Produto criando com sucesso',
+                    mensagem: 'Produto criado com sucesso',
                     idProduto: resultado.insertid 
                 });
 
